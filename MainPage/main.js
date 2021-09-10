@@ -1,4 +1,4 @@
-bgmusic = new Audio('../Sound/bgmusic.mp3');
+bgmusic = new Audio('../Sound/jump.mp3');
 setTimeout(() => {
     bgmusic.play();
 }, 10);
