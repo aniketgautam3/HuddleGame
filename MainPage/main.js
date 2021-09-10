@@ -1,7 +1,7 @@
 bgmusic = new Audio('../Sound/bgmusic1.mp3');
 setTimeout(() => {
     bgmusic.play();
-}, 500);
+}, 10);
 
 
 function myFunction(){
