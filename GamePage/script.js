@@ -12,7 +12,7 @@ setTimeout(() => {
 
 document.onkeydown = function(e){
     console.log("Key code is " , e.keyCode)
-    if(e.keyCode==38){
+    if(e.keyCode==38 || e.keyCode==32){
         jump.play();
        // bgmusic.play();
         mario = document.querySelector('.mario');
