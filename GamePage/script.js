@@ -23,18 +23,6 @@ document.onkeydown = function(e){
         mario.classList.remove('animateMario')
        }, 1000);
     }
-
-    // if(e.keyCode==39){
-    //     mario = document.querySelector('.mario');
-    //     marioX = parseInt(window.getComputedStyle(mario,null).getPropertyValue('left'));
-    //     mario.style.left = marioX + 112 +"px";
-    // }
-
-    // if(e.keyCode==37){
-    //     mario = document.querySelector('.mario');
-    //     marioX = parseInt(window.getComputedStyle(mario,null).getPropertyValue('left'));
-    //     mario.style.left = marioX - 112 +"px";
-    //}
 }
 
 let result = getMobileOperatingSystem();

@@ -13,8 +13,3 @@ function myFunction(){
             control.style.visibility = 'hidden';
     }, 1000);
 }
-
-
-// // function myFunction() {
-//     document.getElementById("control").innerHTML = "Hello World";
-// }
