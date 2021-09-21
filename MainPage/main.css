@@ -4,25 +4,25 @@
 }
 
 body{
+    overflow: hidden;
     width : 100vw;
     height : 100vh;
-    background-image: url(../Images/bg3.png);
+    background-image: url(../Images/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     position: relative;
-    top:40px;
     margin-top: 10px;
     padding: 10px;
 }
 
 h1{
-    color : white;
-    text-shadow: 2px 2px 8px tomato;
+    color : rgb(0, 0, 0);
     font-size: 45px;
 }
 
@@ -41,23 +41,19 @@ h1{
     top: 150px;
 }
 
-.start , .controlx , .developer {
-    position: relative;
-    top: 100px;
-    display: flex;
-    justify-content: center;
-}
 
 button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top : 20px;
     margin-bottom: 20px;
     padding : 20px;
     font-size: large;
-    border-radius: 20px;
-    opacity : .8;
-    color : blue;
+    border-radius: 10px;
+    color : rgb(0, 0, 0);
     cursor: pointer;
     width : 300px;
+    background-color: rgba(249, 216, 255, 0.753);
+    border-color: rgb(255, 211, 255) ;
 }
 
 .control{
@@ -67,7 +63,6 @@ button{
     height : 20px;
     visibility: hidden;
     margin-top: 10px;
-
 }
 
 p{
@@ -79,9 +74,42 @@ p{
 }
 a{
     text-decoration: none;
-    color : blue;
+    color : rgb(0, 0, 0);
 }
 
 button:hover{
-    background-color: rgb(241, 97, 13);
+    background-color: rgb(255, 235, 255);
 }
+
+.glass{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+    max-width: 50%;
+    min-width: fit-content ;
+    margin: auto;
+    margin-top: 10%;
+    background-color: rgba(238, 238, 238, 0.233);
+    height: fit-content;
+}
+
+@media (max-width: 800px) {
+
+    .glass {
+      margin-top: 20%;
+    }
+  }
+
+  @media (max-width: 650px) {
+
+    .glass {
+      margin-top: 30%;
+    }
+
+    button{
+        width: 200px;
+    }
+  }

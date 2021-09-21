@@ -5,7 +5,6 @@ bgmusic = new Audio('../Sound/bgmusic.mp3');
 jump = new Audio('../Sound/jump.mp3');
 game = new Audio('../Sound/gameover.mp3');
 
-
 setTimeout(() => {
     bgmusic.play();
 }, 500);
