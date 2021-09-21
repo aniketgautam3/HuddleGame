@@ -1,19 +1,52 @@
 *{
     margin : 0;
     padding : 0;
+    overflow: hidden;
 }
 
 body{
     overflow: hidden;
+    position: relative;
+}
+
+.background{
+    left:0;
+    top:0;
+    position: absolute;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image : url(../Images/back2.png);
+    animation: animatedBackground 500s linear infinite;
 }
 
 .gameContainer{
-    background-image : url(../Images/background.jpg);
+    position: relative;
+    z-index: 5;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     width: 100%;
     height: 100vh;
 }
+
+@keyframes slideshow
+{
+  0% {left:0;}
+  100% {left:-200%;}
+  
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px 0;
+    }
+  }
 
 .header{
     display: flex;
